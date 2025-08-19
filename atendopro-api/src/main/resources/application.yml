@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/atendopro
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: MinhaChaveSuperSecretaParaJWT
+  expiration: 3600000
+
+mail:
+  host: smtp.seudominio.com
+  port: 587
+  username: usuario@seudominio.com
+  password: senha
+
+aws:
+  accessKeyId: SEU_ACCESS_KEY
+  secretKey: SEU_SECRET_KEY
+  region: us-east-1
+  s3:
+    bucket: atendopro-files
